@@ -1,0 +1,86 @@
+body {
+    color: azure;
+    text-align: center;
+    background-color: darkgoldenrod;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: darkgoldenrod;
+    grid-area: header;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+aside {
+    background-color: darkcyan;
+    grid-area: aside;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: black;
+    gap: 1em;
+}
+
+main img {
+    width: 70%;
+    -webkit-box-shadow: 11px 11px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 11px 11px 5px 0px rgba(0,0,0,0.55);
+    box-shadow: 11px 11px 5px 0px rgba(0,0,0,0.55);
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkgoldenrod;
+}
+footer a{
+    text-decoration: none;
+    color: azure;
+}
+
+footer a:hover{
+    color: darkorchid;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "aside main main"
+                         "aside main main"
+                         "footer footer footer"; 
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background-color: cornsilk;
+}
+
+.cards img:hover{
+    transform: scale(1.5);
+    transition: .6s;
+}
+
+.cards button{
+    border-radius: 0;
+    background-color: darkcyan;
+    padding: 3px 50px;
+    color: azure;
+}
+
+.cards button:hover{
+    background-color: rgb(136, 250, 250);
+}
+
+.cards button:focus{
+    background-color: gray;
+}
